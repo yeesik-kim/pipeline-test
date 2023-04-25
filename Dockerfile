@@ -1,4 +1,4 @@
-FROM openjdk:17-alpine
+FROM openjdk:17-alpine1
 ARG JAR_FILE=target/*.jar
 ARG TEXT_VAL=TEST-VAL
 COPY ${JAR_FILE} app.jar
