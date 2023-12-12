@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  application-dev.yml: "logging:\n  file:\n    path: logs\n    name: ${logging.file.path}/application-dev.log"
+kind: ConfigMap
+metadata:
+  labels:
+    app: demo-app-1.2.6
+    chart: springboot-service-0.2.0
+    heritage: Tiller
+    release: demo-app-deployed-with-spinnaker
+  name: demo-app-spring-config
